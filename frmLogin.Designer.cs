@@ -94,10 +94,10 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnLogin;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtUsuario;
         private TextBox txtContrasena;
     }
 }
