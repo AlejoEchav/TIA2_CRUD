@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLogin = new Button();
+            btnLogin = new Button();
             label1 = new Label();
             label2 = new Label();
-            this.txtUsuario = new TextBox();
+            txtUsuario = new TextBox();
             txtContrasena = new TextBox();
             SuspendLayout();
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new Point(364, 312);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new Size(75, 23);
-            this.btnLogin.TabIndex = 0;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Location = new Point(364, 312);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 0;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label1
             // 
@@ -64,10 +65,10 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new Point(364, 140);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new Size(139, 23);
-            this.txtUsuario.TabIndex = 3;
+            txtUsuario.Location = new Point(364, 140);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(139, 23);
+            txtUsuario.TabIndex = 3;
             // 
             // txtContrasena
             // 
@@ -82,10 +83,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(txtContrasena);
-            Controls.Add(this.txtUsuario);
+            Controls.Add(txtUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(this.btnLogin);
+            Controls.Add(btnLogin);
             Name = "frmLogin";
             Text = "frmLogin";
             ResumeLayout(false);
