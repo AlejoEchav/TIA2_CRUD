@@ -1,6 +1,6 @@
 ﻿namespace TIA2_CRUD
 {
-    partial class Form1
+    partial class frmCrud
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,10 +35,10 @@
             txtLastName = new TextBox();
             txtFirstName = new TextBox();
             btnInsertar = new Button();
-            this.btnActualizar = new Button();
-            this.btnEliminar = new Button();
-            this.btnBuscar = new Button();
-            this.btnLimpiar = new Button();
+            btnActualizar = new Button();
+            btnEliminar = new Button();
+            btnBuscar = new Button();
+            btnLimpiar = new Button();
             btnVertodos = new Button();
             dgvPersons = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvPersons).BeginInit();
@@ -100,42 +100,47 @@
             btnInsertar.TabIndex = 6;
             btnInsertar.Text = "Insertar";
             btnInsertar.UseVisualStyleBackColor = true;
+            btnInsertar.Click += btnInsertar_Click;
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new Point(251, 391);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new Size(75, 23);
-            this.btnActualizar.TabIndex = 7;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Location = new Point(251, 391);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(75, 23);
+            btnActualizar.TabIndex = 7;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new Point(332, 391);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new Size(75, 23);
-            this.btnEliminar.TabIndex = 8;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Location = new Point(332, 391);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(75, 23);
+            btnEliminar.TabIndex = 8;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new Point(413, 391);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new Size(75, 23);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Location = new Point(413, 391);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(75, 23);
+            btnBuscar.TabIndex = 9;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new Point(494, 391);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new Size(75, 23);
-            this.btnLimpiar.TabIndex = 10;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Location = new Point(494, 391);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(75, 23);
+            btnLimpiar.TabIndex = 10;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.UseVisualStyleBackColor = true;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnVertodos
             // 
@@ -145,6 +150,7 @@
             btnVertodos.TabIndex = 11;
             btnVertodos.Text = "Ver Todos";
             btnVertodos.UseVisualStyleBackColor = true;
+            btnVertodos.Click += btnVertodos_Click;
             // 
             // dgvPersons
             // 
@@ -161,10 +167,10 @@
             ClientSize = new Size(800, 450);
             Controls.Add(dgvPersons);
             Controls.Add(btnVertodos);
-            Controls.Add(this.btnLimpiar);
-            Controls.Add(this.btnBuscar);
-            Controls.Add(this.btnEliminar);
-            Controls.Add(this.btnActualizar);
+            Controls.Add(btnLimpiar);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnActualizar);
             Controls.Add(btnInsertar);
             Controls.Add(txtFirstName);
             Controls.Add(txtLastName);
